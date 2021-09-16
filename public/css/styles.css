@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(212, 205, 205);
+}
+header{
+    background-color: #EAC926;
+}
+
+/* main ​section article ​i ​{ 
+    display: ​block​;
+    font-size: ​16​px; 
+    padding: ​5​px​;
+    width: ​30​px​;
+    height: ​30​px​;
+    border: ​1​px​ ​solid​ ​#39b54a​; 
+    background-color: ​#FFF​; 
+    border-radius: ​50​%​; position: ​absolute​;
+    right: ​20​px​;
+    top: ​-15​px​; } */
+.logo-ml{
+    width: 50%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.barra-buscar{
+    background-color: white;
+    width: 200px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #666;
+    display: inline;
+}
+.icon-buscar{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-left: 20px;
+    margin-top: 5px; 
+    display: inline;
+}
+.title{
+   text-align: center;
+   font-size: 16px;
+   margin: 20px 0;
+}
+.title p{
+    display: inline;  
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;   
+    display: none;
+}
+.menu{
+    background-color: blue;
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.menu i {
+ color: white;
+}
+section h3 {
+    padding: 20px;
+}
+.main-img{
+    width: 100%;
+    height: auto;
+}
+.main-img img{
+    width: 100%;
+    height: auto;
+}
+.footer-one{
+    text-align: center;
+    margin: 40px 60px 20px;
+}
+.footer-one i {
+    color: #0f6ed3;
+    margin-bottom: 5px;
+}
+.footer-one h4{
+    text-decoration: none;
+}
+.footer-one p {
+    font-size: 12px;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main article{
+    margin: 5px 0;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    /* position: relative; */
+}
+ main article img {
+     width: 100%;
+     border-bottom: 1px solid #ebebeb; 
+ }
+ article h5 {
+     display: none;
+ }
+ article:hover{
+     box-shadow: 0px 0px 10px rgb(100, 100,100);
+     transition: all 1000ms;
+ }
+article:hover h5{
+    display: block;
+}
+
+article i{
+   transition: all 500ms;
+}
+article:hover .fas   {
+    transform: rotateZ(-70deg);
+}
+
+
+
+.descuento{
+    color: yellowgreen;
+    font-weight: 500;
+}
+.border-ra{
+    color: yellowgreen;
+    border: 2px solid greenyellow;
+    padding: 5px;
+    border-radius: 15px;
+}
+@media screen and (min-width:381px) {
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100,100);
+    }
+    nav ul a{
+        display: block;
+    }
+    article h5 {
+        display: block;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5%;
+    }
+    section h3{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    article {
+        width: 47.5%;
+    }
+}
+@media screen and (min-width:769px) {
+  article{
+      box-shadow: 0px 0px 10px rgb(100, 100,100);
+      height: 300px;
+  }
+  nav ul a{
+      display: block;
+  }
+  article h5 {
+    display: block;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5%;
+}
+section h3{
+    width: 100%;
+    text-align: center;
+}
+article {
+    width: 20%;
+    height: auto;
+}
+}
+
+.test1{
+    display: flex;
+}
+.p1{
+    width: 30%;
+}
+.p2{
+    width: 70%;
+}
+
+/* main section article i {
+    display: block;
+    font-size:16px;
+    padding: 5px;
+    width: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top:-15px
+} */
+
+.header-res {
+    width: 100%;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.logo-ml{
+    width: 50%;
+}
+.logo-ml img {
+    height: auto;
+    width: auto;
+}
+.barra-buscar {
+    width: 45%;
+    height: 30px;
+    font-size: 12px;
+    border: hidden;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 10px;
+}
+.icon-buscar{
+    width: 5%;
+}
+form {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+input{
+    width: 90%;
+    margin: 0 auto;
+    height: 25px;
+    margin: 5px;
+}
+
