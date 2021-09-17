@@ -32,5 +32,22 @@ app.get('/html', (req, res) => res.sendFile(path.join(__dirname, "/views/index.h
 
 app.listen(PORT, () => {
     console.log('App listening on http://localhost:3000');
-}); 
+});
+
+
+{
+  "name": "nuevo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
 */
