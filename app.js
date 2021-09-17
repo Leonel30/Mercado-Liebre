@@ -9,7 +9,7 @@ app.listen(PORT, function(){
     console.log("Servidor corriendo en el puerto 3000")
 })
 
-app.get('/home',(req, res)=>{
+app.get('/',(req, res)=>{
     res.sendFile( path.join(__dirname,'./views/./home.html'))
 })
 app.get('/login',(req, res)=>{
