@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado Liebre|Registro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -38,7 +38,7 @@
                     <a href="#"><li>Ayuda</li></a>
                 </div>
                 <div class="nav-right">
-                    <a href="#">
+                    <a href="/register">
                         <li class="special-li">Creá tu cuenta
                             <i class="fas fa-id-card"></i>
                         </li>
@@ -64,45 +64,61 @@
         </nav>
     </header>
    <!--fin de  header Nav-->
-   <!--  Inicio del main -->
-   <form action="/">
-    <label for="nombre"></label>
-    <input type="text" name="nombre" placeholder="ingrese nombre">
-    <label for="user"></label>
-    <input type="text" name="user" placeholder="nombre de usuario">
-    <label for="email"></label>
-    <input type="email" name="email" placeholder="nombre de correo">
-    <label for="date"></label>
-    <input type="date" name="date" placeholder="">
-    <label for="adress"></label>
-    <input type="text" name="adress" placeholder="Domicilio">
-    <label for="comprador">
-        <input type="radio" name="comprador">comprador
-    </label>
-    <label for="comprador">
-        <input type="radio" name="comprador">vendedor
-    </label>
-    <label for="">
-        <input type="checkbox" value="1">Electro
-    </label>
-    <label for="">
-        <input type="checkbox" value="2">Moda
-    </label>
-    <label for="">
-        <input type="checkbox" value="3">Hogar  
-    </label>
-    <label for="">
-        <input type="checkbox" value="4">Jugueteria  
-    </label>
-    <label for="">
-        <input type="checkbox" value="4">Vida sana  
-    </label>
-    <label for="">
-        <input type="file" value="4">Jugueteria  
-    </label>
+   <!--  Inicio del form -->
+   <h2 class="title-register">Registrate!!</h2>
+   <form action="/" method="GET">
+        <label for="nombre"></label>
+        <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+        <label for="user"></label>
+        <input type="text" name="user" placeholder="Nombre de usuario" required>
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <label for="date" class="date">Fecha de Nacimiento</label>
+        <input type="date" name="date" placeholder="">
+        <label for="adress"></label>
+        <input type="text" name="adress" placeholder="Domicilio">
 
-    
+        <h3 class="title-profile">Perfil del usuario</h3>
+        <div class="perfil">
+            <input type="radio" name="comprador"" class="comprador">Comprador
+            <label for="comprador"></label>
+            <input type="radio" name="comprador" class="comprador">Vendedor
+            <label for="comprador"></label>
+        </div>
+        <h3 class="title-profile">Intereses</h3>
+        <div class="check-list">
+            <input type="checkbox" value="1" class="inter">
+            <label for="">Electro</label>
+        </div>
+        <div class="check-list">
+            <input type="checkbox" value="2" class="inter">
+            <label for="">Moda</label>
+        </div>
+        <div class="check-list">
+            <input type="checkbox" value="3" class="inter">
+            <label for="">Hogar</label>
+        </div>
+        <div class="check-list">
+            <input type="checkbox" value="4" class="inter">
+            <label for="">Jugueteria</label>
+        </div>
+        <div class="check-list">
+            <input type="checkbox" value="4" class="inter">
+            <label for="">Vida sana</label>
+        </div>
+        <div class="check-list">
+                <input type="checkbox" value="4" class="inter">
+                <label for="">Jugueteria</label>
+        </div>
 
+        <label for="file">Adjunto foto</label>
+        <input type="file" name="file" accept=".jpg" multiple >
+        <label for="password">Ingrese Contraseña</label>
+        <input type="password" name="password">
+        <label for="password">Confirmar Contraseña</label>
+        <input type="password" name="password">
+        <button type="submit">Registrar</button>
+        <button type="reset">Cancelar</button>
 </form>
 
 <!-- fin de form -->

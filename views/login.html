@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mercado Liebre|Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
@@ -14,45 +14,46 @@
 </head>
 <body>
     <header>
-        <div class="header-res">
-            <div class="logo-ml">
-            <a href="">
-            <img src="img/logo-mercado-liebre.svg" alt="logo">
-            </a>
+        <div class="contenedor-pc">
+                <div class="logo-ml">
+                    <a href="/">
+                    <img src="img/logo-mercado-liebre.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="barra-buscar">
+                    Buscar productos, 
+                    <i class="fas fa-search"></i>
+                </div>
+            <div class="title">
+                <i class="fas fa-hand-holding-usd"></i>
+                <p>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <div class="barra-buscar">
-            Buscar productos, marcas
-            </div>
-            <div class="icon-buscar">
-            <i class="fas fa-search"></i>
-            </div>
-        </div>
-        <div class="title">
-            <i class="fas fa-hand-holding-usd"></i>
-            <p>comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         <nav>
             <ul>
-                <a href="#"> <li>Ofertas</li></a>
-                <a href="#"> <li>Tiendas Oficiales</li></a>
-                <a href="#"><li>Vender</li></a>
-                <a href="#"><li>Ayuda</li></a>
-                <br>
-                <a href="#">
-                    <li class="special-li">Creá tu cuenta
-                        <i class="fas fa-id-card"></i>
-                    </li>
-                </a>
-                <a href="#">
-                    <li class="special-li">Ingresá
-                        <i class="fas fa-sign-in-alt"></i>
-                    </li>  
-                </a>
-                <a href="#">
-                    <li class="special-li">Mis compras
-                        <i class="fas fa-shopping-basket"></i>
-                    </li>
-                </a>
+                <div class="nav-left">
+                    <a href="#"> <li>Ofertas</li></a>
+                    <a href="#"> <li>Tiendas Oficiales</li></a>
+                    <a href="#"><li>Vender</li></a>
+                    <a href="#"><li>Ayuda</li></a>
+                </div>
+                <div class="nav-right">
+                    <a href="/register">
+                        <li class="special-li">Creá tu cuenta
+                            <i class="fas fa-id-card"></i>
+                        </li>
+                    </a>
+                    <a href="/login">
+                        <li class="special-li">Ingresá
+                            <i class="fas fa-sign-in-alt"></i>
+                        </li>  
+                    </a>
+                    <a href="#">
+                        <li class="special-li">Mis compras
+                            <i class="fas fa-shopping-basket"></i>
+                        </li>
+                    </a>
+                </div>
             </ul>
             <div class="menu">
                 <i class="fas fa-bars"></i>
@@ -62,48 +63,21 @@
             </div>
         </nav>
     </header>
-    <form action="/">
-        <label for="nombre"></label>
-        <input type="text" name="nombre" placeholder="ingrese nombre">
+   <!--fin de  header Nav-->
+   <!--  Inicio del form -->
+   <h2 class="title-register">Ingresa</h2>
+   <form action="/" method="GET">
         <label for="user"></label>
-        <input type="text" name="user" placeholder="nombre de usuario">
-        <label for="email"></label>
-        <input type="email" name="email" placeholder="nombre de correo">
-        <label for="date"></label>
-        <input type="date" name="date" placeholder="">
-        <label for="adress"></label>
-        <input type="text" name="adress" placeholder="Domicilio">
-        <label for="comprador">
-            <input type="radio" name="comprador">comprador
-        </label>
-        <label for="comprador">
-            <input type="radio" name="comprador">vendedor
-        </label>
-        <label for="">
-            <input type="checkbox" value="1">Electro
-        </label>
-        <label for="">
-            <input type="checkbox" value="2">Moda
-        </label>
-        <label for="">
-            <input type="checkbox" value="3">Hogar  
-        </label>
-        <label for="">
-            <input type="checkbox" value="4">Jugueteria  
-        </label>
-        <label for="">
-            <input type="checkbox" value="4">Vida sana  
-        </label>
-        <label for="">
-            <input type="file" value="4">Jugueteria  
-        </label>
+        <input type="text" name="user" placeholder="Nombre de usuario">
+        <label for="password"></label>
+        <input type="password" name="password" placeholder="Ingresa tu contraseña">
+        <button type="submit">Registrar</button>
+</form>
 
-        
-
-    </form>
-
+<!-- fin de form -->
+    
     <footer>
-        <section>
+        <section class="footer">
             <div class="footer-one">
                 <i class="fas fa-credit-card"></i>
                 <h4>Pagá con tarjta o en efectivo</h4>
@@ -119,9 +93,9 @@
                 <h4>Seguridad de principio a fin</h4>
                 <p>¿No te gusta? ¡Devolvelo! En mercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
             </div>
-            <h6>Copyright 1999-2020 MercadLiebre S.R.L</h6>
-           
         </section>
+            <h6>Copyright 1999-2020 MercadLiebre S.R.L</h6>
+        
     </footer>
 </body>
 </html>

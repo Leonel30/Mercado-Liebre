@@ -328,31 +328,76 @@ main article {
 }
 }
 
-/* main section article i {
-    display: block;
-    font-size:16px;
-    padding: 5px;
-    width: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position:absolute;
-    right: 20px;
-    top:-15px
-} */
-
-
+/* Inicio de formulario */
+.title-register{
+    text-align: center;
+    padding: 20px;
+}
 form {
-    width: 80%;
-    height: 600px;
+    width: 90%;
+    padding: 10px;
+    height: auto;
     margin: 0 auto;
-    background-color: aqua;
+    background-color:#ebebeb;
+    border-radius: 10px;
 }
 input{
-    width: 90%;
-    margin: 0 auto;
-    height: 25px;
-    margin: 5px;
+    width: 100%;
+    height: 35px;
+    margin: 15px auto;
+    padding-left: 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+.perfil{
+    display: flex;
+    width: 80%;
+    margin: 20px 0;
+}
+.comprador{
+    height: 10px;
+    margin: 0;
+    align-self: center;
+}
+.title-profile{
+    font-size: 16px;
+    font-weight: 900;
+}
+.check-list{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.check-list input{
+    width: 40%;
+}
+.check-list label{
+    width: 60%;
+}
+.inter{
+    height: 15px;
+    display: inline;
+    border-style: none;
+}
+button{
+    border-style: none;
+    background-color: rgb(63, 181, 197);
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 16px;
+}
+@media screen and (min-width:381px){
+    form{
+        width: 60%;
+    }
+}
+@media screen and (min-width:769px){
+    form{
+        width: 30%;
+    }
 }
 
 /*  Inicio css Footer */
