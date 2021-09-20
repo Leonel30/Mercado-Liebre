@@ -1,3 +1,20 @@
+/*
+Amarillo: #EAC926; 
+Azul: #03264C; 
+Celeste: #1259c3; 
+Gris oscuro: #666; 
+Gris claro: #ebebeb; 
+Verde: #39b54a;
+
+tipografia 
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px 
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -11,17 +28,14 @@ header{
     background-color: #EAC926;
 }
 
-/* main ​section article ​i ​{ 
-    display: ​block​;
-    font-size: ​16​px; 
-    padding: ​5​px​;
-    width: ​30​px​;
-    height: ​30​px​;
-    border: ​1​px​ ​solid​ ​#39b54a​; 
-    background-color: ​#FFF​; 
-    border-radius: ​50​%​; position: ​absolute​;
-    right: ​20​px​;
-    top: ​-15​px​; } */
+/* Inicio Header */
+.contenedor-pc{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
 .logo-ml{
     width: 50%;
     height: auto;
@@ -29,14 +43,19 @@ header{
     padding-left: 20px;
     margin-bottom: 20px;
 }
-.barra-buscar{
-    background-color: white;
-    width: 200px;
-    border: 1px solid black;
-    margin-left: 20px;
-    margin-top: 20px;
-    color: #666;
-    display: inline;
+
+.barra-buscar {
+    width: 45%;
+    height: 40px;
+    font-size: 16px;
+    color:#666;
+    margin-left: 10px;
+    border: hidden;
+    text-align: center;
+    align-self: center;
+    border-radius: 5px;
+    padding-top: 10px;
+    background-color: #ffff;
 }
 .icon-buscar{
     background-color: white;
@@ -49,6 +68,7 @@ header{
     display: inline;
 }
 .title{
+    width:100%;
    text-align: center;
    font-size: 16px;
    margin: 20px 0;
@@ -56,11 +76,30 @@ header{
 .title p{
     display: inline;  
 }
+@media screen and (min-width:381px) {
+    .contenedor-pc {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logo-ml{
+        width: 200px;
+    }
+    .barra-buscar{
+        margin: 0px;
+    }
+}
+
+
+/* Fin Header */
+
+/* Incio Nav */
 
 nav ul a{
     text-decoration: none;
     color: black;   
     display: none;
+    margin-bottom: 20px;
 }
 .menu{
     background-color: blue;
@@ -68,54 +107,53 @@ nav ul a{
     margin: 0 auto;
     text-align: center;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px 5px;
     margin-bottom: 20px;
 }
 .menu i {
  color: white;
 }
-section h3 {
-    padding: 20px;
-}
+
+/*Pre-Main */
+
 .main-img{
     width: 100%;
-    height: auto;
+    height: 90px;
 }
 .main-img img{
     width: 100%;
-    height: auto;
+    height: 90px;
 }
-.footer-one{
-    text-align: center;
-    margin: 40px 60px 20px;
-}
-.footer-one i {
-    color: #0f6ed3;
-    margin-bottom: 5px;
-}
-.footer-one h4{
-    text-decoration: none;
-}
-.footer-one p {
-    font-size: 12px;
-}
+
+/*Fin pre-main */
+
+/* inicio main  */
 main{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
+
 main article{
-    margin: 5px 0;
+    margin: 5px auto;
+    width: 95%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
     background-color: white;
-    /* position: relative; */
+    position: relative;
+}
+section h3 {
+    width: 100%;
+    font-size: 24px;
+    margin: 10px auto;
+    text-align: center;
 }
  main article img {
      width: 100%;
      border-bottom: 1px solid #ebebeb; 
  }
  article h5 {
-     display: none;
+    display: none;
+     
  }
  article:hover{
      box-shadow: 0px 0px 10px rgb(100, 100,100);
@@ -131,41 +169,104 @@ article i{
 article:hover .fas   {
     transform: rotateZ(-70deg);
 }
+.contenedor-info{
+ display: flex;
+ width: 90%;
+ position: relative;
+}
 
-
+.precio {
+    font-size: 18px;
+    width: 30%;
+    padding-left: 10px;
+}
 
 .descuento{
-    color: yellowgreen;
+    color: #39b54a;
     font-weight: 500;
+    font-size: 16px;
+    width: 70%;
 }
 .border-ra{
-    color: yellowgreen;
-    border: 2px solid greenyellow;
+    color:#39b54a;
+    border: 2px solid #39b54a;
     padding: 5px;
-    border-radius: 15px;
+    font-size: 16px;
+    border-radius: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    position: absolute;
+    right: 20px;
+    top: 325px;
 }
-@media screen and (min-width:381px) {
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100,100);
+@media screen and (min-width:381px){
+    .menu{
+        display: none;
+    }
+    .logo-ml{
+        width: 30%;
+    }
+    .barra-buscar{
+        margin-left: 2%;
+        width: 20%;
+        height: 30px;
+        padding-top: 5px;
+    }
+    .title{
+        width: 45%;
+        align-self: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-left{
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-right{
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+    }
+    li{
+        list-style: none;
     }
     nav ul a{
-        display: block;
+        display: none;
     }
+    
     article h5 {
         display: block;
     }
     section {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 5%;
     }
     section h3{
         width: 100%;
-        margin: 0 auto;
+        margin: 20px auto;
+        font-weight: 900;
         text-align: center;
     }
-    article {
-        width: 47.5%;
+    main article{
+        width: 45%;
+        height: auto;
+        box-shadow: 0px 0px 10px rgb(100, 100,100);
+    }
+    .main-img{
+        width: 100%;
+        height: 200px;
+    }
+    .main-img img{
+        width: 100%;
+        height: 200px;
+    }
+    .border-ra{
+        top: 318px;
     }
 }
 @media screen and (min-width:769px) {
@@ -182,26 +283,49 @@ article:hover .fas   {
 section {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 5%;
+    justify-content: space-around;
 }
 section h3{
     width: 100%;
     text-align: center;
 }
-article {
+main article {
     width: 20%;
     height: auto;
 }
+.nav-left{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-right{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+.main-img{
+    width: 100%;
+    height: 300px;
+}
+.main-img img{
+    width: 100%;
+    height: 300px;
+}
+.border-ra{
+    top: 260px;
+}
+.precio {
+    font-size: 18px;
+    width: 35%;
+    padding-left: 10px;
 }
 
-.test1{
-    display: flex;
+.descuento{
+    color: #39b54a;
+    font-weight: 500;
+    font-size: 16px;
+    width: 65%;
 }
-.p1{
-    width: 30%;
-}
-.p2{
-    width: 70%;
 }
 
 /* main section article i {
@@ -217,33 +341,7 @@ article {
     top:-15px
 } */
 
-.header-res {
-    width: 100%;
-    display: flex;
-    height: 70px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.logo-ml{
-    width: 50%;
-}
-.logo-ml img {
-    height: auto;
-    width: auto;
-}
-.barra-buscar {
-    width: 45%;
-    height: 30px;
-    font-size: 12px;
-    border: hidden;
-    text-align: center;
-    line-height: 100%;
-    border-radius: 10px;
-}
-.icon-buscar{
-    width: 5%;
-}
+
 form {
     width: 80%;
     height: 600px;
@@ -256,4 +354,71 @@ input{
     height: 25px;
     margin: 5px;
 }
+
+/*  Inicio css Footer */
+footer {
+    background-color: #ffff;
+    width: 95%;
+    margin: 20px auto 0;
+    padding: 15px 0;
+}
+
+.footer-one{
+    text-align: center;
+    margin: 40px 60px 20px;
+}
+.footer-one i {
+    color: #0f6ed3;
+    margin-bottom: 5px;
+    font-size: 30px
+}
+.footer-one h4{
+    text-decoration: none;
+    font-weight: 900;
+}
+.footer-one p {
+    font-size: 12px;
+    
+}
+footer h6 {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+@media screen and (min-width:381px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-one{
+        width: 33%;
+        padding: 0;
+        margin: 0;
+    }
+   footer h6{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+@media screen and (min-width:769px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-one{
+        width: 33%;
+        padding: 0;
+        margin: 0;
+    }
+   footer h6{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+
+/* Fin css foooter */
 
